@@ -15,11 +15,11 @@
 <body  >
     <header class="mx-auto  max-w-full">
         <!-- nav start form here -->
-          <nav class="navbar flex justify-between items-center bg-white pr-12 pl-12 "> 
+          <nav class="navbar flex flex-col justify-between items-center bg-white pr-12 pl-12 sm:flex-row "> 
              <div class="logo-box flex items-center gap-3">
                     <img class="w-[50px] h-[50px]" src="assets/logo.png" alt="Green-logo">
                     <div class="nav-title">
-                         <h1 class="text-[#006747] font-bold text-2xl">Emergency <br> Services</h1>
+                         <h1 class="text-[#006747] font-bold text-2xl">Emergency <span class="sm:inline"> <br> </span>Services</h1>
                     </div>
              </div>
              <div class="side-logo-box flex items-center gap-[20px]">
@@ -29,23 +29,24 @@
                    <div class="coin-box flex items-center gap-[10px]   rounded-full w[125px] h-[50px] p-6 bg-[#41ff6b1a]">
                     <span id="coin-count" class="font-bold">100</span><img class="w-[24px] h-[24px]" src="assets/coin.png" alt="coin-logo"></div>
 
-                   <div class="copy-box w[125px] h-[50px] p-6   text-white font-semibold  flex items-center bg-[#00a63e] rounded-full"><h4><span>0</span> Copy</h4></div>
+                   <div class="copy-box w[125px] h-[50px] p-6   text-white font-semibold  flex items-center bg-[#00a63e] rounded-full">
+                    <h4><span>0</span> Copy</h4></div>
 
 
              </div>
           </nav>
         <!-- banner section start here -->
-         <div class="banner bg-[linear-gradient(90deg,#013223_0%,#006747_50%,#013223_100%)]  h-[239px] py-3 pr-12 pl-12">
+         <div class="banner bg-[linear-gradient(90deg,#013223_0%,#006747_50%,#013223_100%)]  h-[239px] lg:py-3 pr-12 pl-12 sm:w-full">
                     <img class="w-[92px] h-[92px] mx-auto mt-5" src="assets/logo-dark.png" alt="logo-bangladesh">
                     <h1 class="banner_title text-white text-4xl font-bold text-center mt-3">Emergency Service Directory</h1>
                     <p class="banner_sub_title text-white text-xl font-semibold text-center mt-3 ">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
          </div>
     </header>
     <main >
-        <div class="flex  sm:flex-row">
+        <div class="flex flex-col sm:flex-row">
           <!-- card section -->
-           <section class="card_container grid  lg:grid-cols-3 p-10 gap-8  sm:grid-cols-1 ">
-            <div class="card_box w-full h-[360px]  bg-white  rounded-xl shadow-md  p-8">
+           <section class="card_container grid lg:grid-cols-3 sm:grid-cols-1 p-4 ">
+           <div class="card_box w-full h-[360px]   bg-white  rounded-xl shadow-md p-8">
                  <div class="card_head flex items-center justify-between  bg-[#ffffff]">
                       <div class="bg-[#FFE3E2] h-[60px] w-[60px] flex items-center rounded-lg ">
                        <img class="h-[32px] w-[32px] mx-auto " src="assets/emergency.png" alt="emergency_pic">
@@ -58,7 +59,7 @@
                  </div>
                  <div class="mt-4" >
                   
-                    <h1 class="font-bold text-2xl">National Emergency Number</h1>
+                    <h1 class=" service-title font-bold text-2xl">National Emergency Number</h1>
                     <h3 class=" sub-title text-xl text-[#adadad]">National Emergency</h3>
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">999</h5>
@@ -80,7 +81,7 @@
                  </div>
                  <div class="mt-4" >
                   
-                    <h1 class="font-bold text-2xl">Police Helpline Number</h1>
+                    <h1 class=" service-title font-bold text-2xl">Police Helpline Number</h1>
                     <h3 class=" sub-title text-xl text-[#adadad]">Police</h3>
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">999</h5>
@@ -104,7 +105,7 @@
                  </div>
                  <div class="mt-4" >
                   
-                    <h1 class="font-bold text-2xl">Fire Service Number</h1>
+                    <h1 class=" service-title font-bold text-2xl">Fire Service Number</h1>
                     <h3 class="sub-title text-xl text-[#adadad]">Fire Service</h3>
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">999</h5>
@@ -128,7 +129,7 @@
                  </div>
                  <div class="mt-4" >
                   
-                    <h1 class="font-bold text-2xl">Ambulance Service</h1>
+                    <h1 class=" service-title font-bold text-2xl">Ambulance Service</h1>
                     <h3 class="sub-title text-xl text-[#adadad]">Ambulance</h3>
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">1994-999999</h5>
@@ -152,7 +153,7 @@
                  </div>
                  <div class="mt-4" >
                   
-                    <h1 class="font-bold text-2xl">Women & Child Helpline</h1>
+                    <h1 class=" service-title font-bold text-2xl">Women & Child Helpline</h1>
                     <h3 class="sub-title text-xl text-[#adadad]">Women & Child Helpline</h3>
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">109</h5>
@@ -176,7 +177,7 @@
                  </div>
                  <div class="mt-4" >
                   
-                    <h1 class="font-bold text-2xl">Anti-Corruption Helpline</h1>
+                    <h1 class=" service-title font-bold text-2xl">Anti-Corruption Helpline</h1>
                     <h3 class="sub-title text-xl text-[#adadad]">Anti-Corruption</h3>
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">106</h5>
@@ -200,7 +201,7 @@
                  </div>
                  <div class="mt-4" >
                   
-                    <h1 class="font-bold text-2xl">Electricity Helpline</h1>
+                    <h1 class=" service-title font-bold text-2xl">Electricity Helpline</h1>
                     <h3 class="sub-title text-xl text-[#adadad]">Electricity Outage</h3>
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">16216</h5>
@@ -224,7 +225,7 @@
                  </div>
                  <div class="mt-4" >
                   
-                    <h1 class="font-bold text-2xl">Brac Helpline</h1>
+                    <h1 class=" service-title font-bold text-2xl">Brac Helpline</h1>
                     <h3 class="sub-title text-xl text-[#adadad]">Brac</h3>
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">16445</h5>
@@ -248,7 +249,7 @@
                  </div>
                  <div class="mt-4" >
                   
-                    <h1 class="font-bold text-2xl">Bangladesh Railway Helpline </h1>
+                    <h1 class=" service-title font-bold text-2xl">Bangladesh Railway Helpline </h1>
                     <h3 class="sub-title text-xl text-[#adadad]">Bangladesh Railway</h3>
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">163</h5>
@@ -261,10 +262,14 @@
      
            </section>
            <!-- call hestory section -->
-           <section class="date_an_time w-[400px] p-10 ">
+           <section class="date_an_time w-[400px]  p-10 ">
                 <div class="border-1 border-green-500 flex items-center justify-between  ">
-                    <div><p>Call History</p></div>
-                    <button class="btn btn-sm">Call</button>
+                    <div><p class="font-bold text-xl"><i class="fa-regular fa-clock"></i> Call History</p></div>
+                    <button id="clear-btn" class="btn btn-sm  w[125px] bg-[#00A63E] text-white p-5 rounded-full">Clear</button>
+                </div>
+                <!-- call-history-container -->
+                <div id="call-history-container" class="call-historyContainer ">
+                     
                 </div>
            </section>
         </div>

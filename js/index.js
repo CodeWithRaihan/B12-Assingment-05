@@ -1,3 +1,5 @@
+
+
 // heart btn functionality 
 const heartButtons = document.getElementsByClassName("heart_button");
  for(let btn of heartButtons){
@@ -22,10 +24,40 @@ for (let btn of callButtons){
        }
        else{
         const card = btn.closest(".card_box");
+        const serviceTitle= card.querySelector(".service-title")
         const subTitle = card.querySelector(".sub-title");
-        const subTitle_2=card.querySelector(".sub-title-number");
-         alert(subTitle.innerText+" - "+subTitle_2.innerText);
+        const subTitleNumber=card.querySelector(".sub-title-number");
+         alert("📞calling"+subTitle.innerText+" "+subTitleNumber.innerText);
+
+        const realDateTime=new Date ().toLocaleTimeString();
+        const callHistoryContainer= document.getElementById("call-history-container");
+        const div=document.createElement("div");
+        div.innerHTML=`
+                      <div class="flex  justify-between items-center p-5">
+                           <div>
+                         <h1 class="font-bold">${serviceTitle.innerText}</h1>
+                         <h5>${subTitleNumber.innerText}</h5>
+                     </div>
+                     <div>
+                         <p>${realDateTime}</p>
+                     </div>
+                     </div>
+                      </div>
+                     
+                     `;
+                     callHistoryContainer.appendChild(div); 
        }
        coinCount.innerText = totalCoinCount ;
       })
+        
 }
+
+
+// clear btn functionality
+
+const clearBtn = document.getElementById("clear-btn").addEventListener('click',function(){
+     console.log("clear-btn worked");
+     const removeElement=document.getElementById("call-history-container");
+     removeElement.innerHTML="";
+    
+});
