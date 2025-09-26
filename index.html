@@ -15,11 +15,11 @@
 <body  >
     <header class="mx-auto  max-w-full">
         <!-- nav start form here -->
-          <nav class="navbar flex flex-col justify-between items-center bg-white pr-12 pl-12 sm:flex-row "> 
+          <nav class="navbar flex flex-col justify-between items-center bg-white pr-12 pl-12 sm:flex-row mx-auto "> 
              <div class="logo-box flex items-center gap-3">
                     <img class="w-[50px] h-[50px]" src="assets/logo.png" alt="Green-logo">
                     <div class="nav-title">
-                         <h1 class="text-[#006747] font-bold text-2xl">Emergency <span class="sm:inline"> <br> </span>Services</h1>
+                         <h1 class="text-[#006747] font-bold text-2xl">Emergency <span class="hidden sm:inline"> <br> </span>Services</h1>
                     </div>
              </div>
              <div class="side-logo-box flex items-center gap-[20px]">
@@ -29,24 +29,22 @@
                    <div class="coin-box flex items-center gap-[10px]   rounded-full w[125px] h-[50px] p-6 bg-[#41ff6b1a]">
                     <span id="coin-count" class="font-bold">100</span><img class="w-[24px] h-[24px]" src="assets/coin.png" alt="coin-logo"></div>
 
-                   <div class="copy-box w[125px] h-[50px] p-6   text-white font-semibold  flex items-center bg-[#00a63e] rounded-full">
-                    <h4><span>0</span> Copy</h4></div>
-
-
+                   <div  class="copy-box w[125px] h-[50px] p-6   text-white font-semibold  flex items-center bg-[#00a63e] rounded-full">
+                    <h4><span id="copy-count">0</span> Copy</h4></div>
              </div>
           </nav>
         <!-- banner section start here -->
-         <div class="banner bg-[linear-gradient(90deg,#013223_0%,#006747_50%,#013223_100%)]  h-[239px] lg:py-3 pr-12 pl-12 sm:w-full">
+         <div class="banner bg-[linear-gradient(90deg,#013223_0%,#006747_50%,#013223_100%)]   lg:py-3 pr-12 pl-12 sm:w-full">
                     <img class="w-[92px] h-[92px] mx-auto mt-5" src="assets/logo-dark.png" alt="logo-bangladesh">
                     <h1 class="banner_title text-white text-4xl font-bold text-center mt-3">Emergency Service Directory</h1>
                     <p class="banner_sub_title text-white text-xl font-semibold text-center mt-3 ">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
          </div>
     </header>
     <main >
-        <div class="flex flex-col sm:flex-row">
+        <div class="flex flex-col md:flex-row ">
           <!-- card section -->
-           <section class="card_container grid lg:grid-cols-3 sm:grid-cols-1 p-4 ">
-           <div class="card_box w-full h-[360px]   bg-white  rounded-xl shadow-md p-8">
+           <section class="card_container gap-4 mx-auto max-w-full grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 p-4 ">
+           <div class="card_box w-full h-[360px]    bg-white  rounded-xl shadow-md  p-8">
                  <div class="card_head flex items-center justify-between  bg-[#ffffff]">
                       <div class="bg-[#FFE3E2] h-[60px] w-[60px] flex items-center rounded-lg ">
                        <img class="h-[32px] w-[32px] mx-auto " src="assets/emergency.png" alt="emergency_pic">
@@ -64,9 +62,9 @@
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">999</h5>
                     <p class="text-[#adadad] pl-3">All</p>
-                    <div class="mt-6">
-                          <button class="btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C] w-[150px] h-[40px] rounded-lg border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button> 
-                          <button id="call_btn" class="call-button  btn btn-active btn-secondary bg-[#00A63E] border-none  w-[150px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                    <div class="mt-6 flex gap-2 justify-center">
+                          <button class="copy-btn btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C]   rounded-lg px-6 border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button> 
+                          <button id="call_btn" class="call-button  btn btn-active btn-secondary bg-[#00A63E] border-none  px-6 rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                  </div>
             </div>
@@ -86,9 +84,10 @@
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">999</h5>
                     <p class="text-[#adadad] pl-3">Police</p>
-                    <div class="mt-6">
-                          <button class="btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C] w-[150px] h-[40px] rounded-lg border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
-                          <button class="call-button  btn btn-active btn-secondary bg-[#00A63E] border-none  w-[150px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                    <div class="mt-6 flex justify-center gap-2">
+                          <button class="copy-btn btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C]  px-6 rounded-lg border-1 border-[#d4d6d5]">
+                              <i class="fa-regular fa-copy"></i>Copy</button>
+                          <button class="call-button  btn btn-active btn-secondary bg-[#00A63E] border-none px-6  rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                  </div>
             </div>
@@ -110,9 +109,9 @@
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">999</h5>
                     <p class="text-[#adadad] pl-3">Fire</p>
-                    <div class="mt-6">
-                          <button class="btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C] w-[150px] h-[40px] rounded-lg border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
-                          <button class="call-button  btn btn-active btn-secondary bg-[#00A63E] border-none  w-[150px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                    <div class="mt-6 flex justify-center items-center gap-2">
+                          <button class="copy-btn btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C] px-6  rounded-lg border-[1px] border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                          <button class="call-button  btn btn-active btn-secondary bg-[#00A63E] border-none  px-6 rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                  </div>
             </div>
@@ -134,9 +133,9 @@
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">1994-999999</h5>
                     <p class="text-[#adadad] pl-3">Health</p>
-                    <div class="mt-6">
-                          <button class="btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C] w-[150px] h-[40px] rounded-lg border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
-                          <button class="call-button  btn btn-active btn-secondary bg-[#00A63E] border-none  w-[150px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                    <div class="mt-6 flex gap-2 justify-center ">
+                          <button class="copy-btn btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C] px-6 rounded-lg border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                          <button class="call-button  btn btn-active btn-secondary bg-[#00A63E] border-none  px-6 rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                  </div>
             </div>
@@ -158,9 +157,9 @@
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">109</h5>
                     <p class="text-[#adadad] pl-3">Help</p>
-                    <div class="mt-6">
-                          <button class="btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C] w-[150px] h-[40px] rounded-lg border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
-                          <button class="call-button  btn btn-active btn-secondary bg-[#00A63E] border-none  w-[150px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                    <div class="mt-6 flex justify-center gap-2">
+                          <button class="copy-btn btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C] px-6 rounded-lg border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                          <button class="call-button  btn btn-active btn-secondary bg-[#00A63E] border-none  px-6 rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                  </div>
             </div>
@@ -182,9 +181,9 @@
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">106</h5>
                     <p class="text-[#adadad] pl-3">Govt.</p>
-                    <div class="mt-6">
-                          <button class="btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C] w-[150px] h-[40px] rounded-lg border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
-                          <button class="call-button  btn btn-active btn-secondary bg-[#00A63E] border-none  w-[150px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                    <div class="mt-6 flex justify-center gap-2">
+                          <button class="copy-btn btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C] px-6 rounded-lg border-[1px] border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                          <button class="call-button  btn btn-active btn-secondary bg-[#00A63E] border-none  px-6 rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                  </div>
             </div>
@@ -206,9 +205,9 @@
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">16216</h5>
                     <p class="text-[#adadad]">Electricity</p>
-                    <div class="mt-6">
-                          <button class="btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C] w-[150px] h-[40px] rounded-lg border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
-                          <button class="call-button  btn btn-active btn-secondary bg-[#00A63E] border-none  w-[150px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                    <div class="mt-6 flex justify-center gap-2 items-center">
+                          <button class="copy-btn btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C] px-6 rounded-lg border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                          <button class="call-button  btn btn-active btn-secondary bg-[#00A63E] border-none  px-6 rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                  </div>
             </div>
@@ -230,9 +229,9 @@
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">16445</h5>
                     <p class="text-[#adadad]">NGO</p>
-                    <div class="mt-6">
-                          <button class="btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C] w-[150px] h-[40px] rounded-lg border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
-                          <button class="call-button btn btn-active btn-secondary bg-[#00A63E] border-none  w-[150px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                    <div class="mt-6 flex justify-center items-center gap-2">
+                          <button class="copy-btn btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C] px-6 rounded-lg border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                          <button class="call-button btn btn-active btn-secondary bg-[#00A63E] border-none  px-6 rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                  </div>
             </div>
@@ -254,15 +253,15 @@
                   
                     <h5 class="sub-title-number font-bold text-3xl mt-6">163</h5>
                     <p class="text-[#adadad] pl-3">Travel</p>
-                    <div class="mt-6">
-                          <button class="btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C] w-[150px] h-[40px] rounded-lg border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
-                          <button class="call-button  btn btn-active btn-secondary bg-[#00A63E] border-none  w-[150px] h-[40px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+                    <div class="mt-6 flex justify-center items-center gap-2">
+                          <button class="copy-btn btn btn-active btn-secondary bg-[#FFFFFF] text-[#5C5C5C] px-6 rounded-lg border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                          <button class="call-button  btn btn-active btn-secondary bg-[#00A63E] border-none  px-6 rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
                     </div>
                  </div>
      
            </section>
            <!-- call hestory section -->
-           <section class="date_an_time w-[400px]  p-10 ">
+           <section class="date_an_time w-[400px]  p-10  mx-auto">
                 <div class="border-1 border-green-500 flex items-center justify-between  ">
                     <div><p class="font-bold text-xl"><i class="fa-regular fa-clock"></i> Call History</p></div>
                     <button id="clear-btn" class="btn btn-sm  w[125px] bg-[#00A63E] text-white p-5 rounded-full">Clear</button>

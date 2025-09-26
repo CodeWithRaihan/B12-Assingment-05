@@ -10,7 +10,9 @@ const heartButtons = document.getElementsByClassName("heart_button");
      heartCount.innerText = totalHeartCount;
      })
  }
- 
+
+   
+   
 //  call btn functionality 
 const callButtons = document.getElementsByClassName("call-button");
 for (let btn of callButtons){
@@ -52,12 +54,37 @@ for (let btn of callButtons){
         
 }
 
+// copy btn functionality 
+const copyButtons = document.getElementsByClassName("copy-btn");
+
+for (let callBtn of copyButtons) {
+    callBtn.addEventListener('click', function () {
+
+        const copyCount = document.getElementById("copy-count");
+        const copyCountNumber = parseInt(copyCount.innerText);
+        const totalCopyCount = copyCountNumber + 1;
+        copyCount.innerText = totalCopyCount;
+
+        const card = callBtn.closest(".card_box");
+        const copyServiceText = card.querySelector(".service-title");
+        const copyNumber = card.querySelector(".sub-title-number");
+        
+        const copyNumberText = `${copyServiceText.innerText} - ${copyNumber.innerText}`;
+
+        
+        navigator.clipboard.writeText(copyNumberText).then(() => {
+            alert(`Calling "${copyNumberText}" copied!`);
+        }).catch(err => {
+            console.error("Failed to copy: ", err);
+        });
+    });
+}
+
 
 // clear btn functionality
 
 const clearBtn = document.getElementById("clear-btn").addEventListener('click',function(){
-     console.log("clear-btn worked");
      const removeElement=document.getElementById("call-history-container");
      removeElement.innerHTML="";
-    
+
 });
