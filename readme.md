@@ -32,6 +32,6 @@ useful: Instead of attaching multiple event listeners (one for each child elemen
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
 preventDefault():This method prevents the browser's default action associated with a specific event.
-stopPropagation()
+stopPropagation():This method prevents the event from propagating further through the DOM hierarchy. This means it stops the event from "bubbling up" to parent elements or "capturing down" to child elements.
 
 
